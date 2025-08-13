@@ -1,0 +1,70 @@
+.blog .box-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:(minmax(30rem,1fr)[auto-fit]);
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    background-color: #f0e8e4;
+}
+.blog .box-container .box{
+    border: 0.1px solid #caab9f;
+    border-radius: 2rem;
+    background: #f5eeeb;
+}
+.blog .box-container .box:hover .image img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+.blog .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem 2rem 0 0;
+
+}
+.blog .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}.blog .box-container .box .content{
+    padding: 1.5rem 2rem;
+}
+.blog .box-container .box .content h3{
+    font-size: 2rem;
+    color: #5e473e;
+}
+.blog .box-container .box .content p{
+    font-size: 1.4rem;
+    color: #b587de;
+    line-height: 1rem 0;
+    padding: 1rem 0;
+}
+.blog .box-container .box .content .icons{
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid #5e473e ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.blog .box-container .box .content .icons a{
+    font-size: 1.4rem;
+    color: #b587de;
+}
+.blog .box-container .box .content .icons a:hover{
+    column-gap: #9e7464;
+}
+.blog .box-container .box .content .icons a i{
+    padding-right: .5rem;
+    color: #5e473e;
+}

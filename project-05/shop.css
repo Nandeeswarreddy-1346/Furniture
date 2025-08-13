@@ -1,0 +1,211 @@
+/*--categories--*/
+
+
+
+
+
+
+
+.category {
+    padding: 3rem 2rem;
+}
+
+.category .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #5e473e;
+}
+
+.category .title span {
+    font-weight: 600;
+}
+
+.category .title a {
+    font-size: 1.2rem;
+    color: #5e473e;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.category .title a:hover {
+    color: #a88d7f;
+}
+
+.category .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.category .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    background: #f0e8e4;
+    transition: box-shadow 0.3s ease;
+    display: block;
+}
+
+.category .box-container .box:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.category .box-container .box img {
+    height: 6rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.category .box-container .box:hover img {
+    transform: translateY(-3px);
+}
+
+.category .box-container .box h3 {
+    font-size: 1.7rem;
+    color: #5e473e;
+}
+
+.products .box-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:(mimax(26rem,1fr)[auto-fit]);
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    background-color: #f0e8e4;
+}
+
+
+.products .box-container .box{
+    position: relative;
+    background: #f5eeeb;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 0.1rem solid #caab9f;
+
+}
+.products.box-container .box:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+
+
+.products .box-container .box:hover .icons{
+    top: 0;
+}
+.products .box-container .box .icons{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 30rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    background: rgba(242,242,242,0.7);
+    gap: .5rem;
+    z-index: 10;
+}
+.products .box-container .box .icons a{
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    width: 5rem;
+    background: #e1cec7;
+    color: #5e473e;
+    border-radius:50%;
+    font-size: 2rem;
+   -webkit-box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.products .box-container .box .icons a:hover{
+    background: #5e473e;
+    color: #e1cec7;
+
+}
+.products .box-container .box  .image{
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+.products .box-container .box  .image img{
+    height: 100%;
+    width: 100%;
+
+-o-object-fit:cover;
+    object-fit: cover;
+}
+.products .box-container .box .content{
+    padding: 1.5rem 2rem;
+
+}
+.products .box-container .box .content.price{
+    font-size: 1.7rem;
+    color: #b58d7e;
+}
+.products .box-container .box .content h3{
+    font-size: 3rem;
+    color: #b58d7e;
+    padding: .5rem 0;
+}
+.products .box-container .box .content .stars{
+    font-size: 1.7rem;
+}
+.products .box-container .box .content .stars i{
+    color: gold;
+
+}
+.products .box-container .box .content .stars span{
+    color: #b58d7e;
+} 
+
+
+
+
+
+
+.services .box-container{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:(mimax(30rem,1fr)[auto-fit]);
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.services .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    background-color: #f0e8e4;
+    border-radius: 2rem;
+}
+.services .box-container .box:hover{
+    box-shadow:rgba(0,0,0,0.1)0px 4px 12px;
+}
+.services .box-container .box:hover img{
+    transform: translateY(-3px);
+}
+.services .box-container .box img{
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+.services .box-container .box h3{
+    font-size: 2.2rem;
+    color: #5e473e;
+}
+.services .box-container .box p{
+    font-size: 1.7rem;
+    color: #b58d7e;
+    line-height: 2;
+    padding: 1rem 0;
+
+}

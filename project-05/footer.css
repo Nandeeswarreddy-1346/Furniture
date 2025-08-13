@@ -1,0 +1,74 @@
+.footer {
+    margin: 2%;
+    border-radius: 3rem;
+    background: #f0e8e4;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5em;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #5e473e;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.6rem;
+    color: #b58d7e;
+    padding: 1rem;
+}
+
+.footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #5e473e;
+    padding: 1rem 0;
+align-items: center;
+    display: flex;
+    transition: color 0.3s ease;
+}
+
+.footer .box-container .box a i {
+    margin-right: 0.5rem;
+    font-size: 1.7rem;
+    color: #5e473e;
+    transition: margin-right 0.3s ease;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 1.5rem;
+    color: #a25a3f; /* increased padding on hover */
+}
+
+.footer .box-container .box a:hover {
+    color: #a25a3f;
+    margin-right: 1.5rem; /* optional color change */
+}
+
+.footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #5e473e;
+    text-transform: none;
+    margin: 0.7rem 0;
+    background: transparent;
+    border-radius: 0.75rem;
+    border: 0.1rem solid #caab9f;
+}
+
+.footer .box-container .box form input[type="email"]::placeholder {
+    color: #5e473e;
+}
+
+.credit {
+    text-align: center;
+    font-size: 2rem;
+    color: #5e473e;
+    background: #f0e8e4;
+    margin: 2%;
+    border-radius: 3rem;
+}
